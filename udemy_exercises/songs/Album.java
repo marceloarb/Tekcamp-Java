@@ -1,4 +1,5 @@
-package udemy_exercises.songs;
+package songs;
+
 
 class Album {
 

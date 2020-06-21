@@ -1,4 +1,4 @@
-package udemy_exercises.bank;
+package bank;
 
 public class Bank {
     
