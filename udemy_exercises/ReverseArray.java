@@ -21,7 +21,7 @@ public class ReverseArray {
 		
 	}
 	
-	
+	// Reverse array is impure
 	
 
 	public static void reverse(int[] array) {

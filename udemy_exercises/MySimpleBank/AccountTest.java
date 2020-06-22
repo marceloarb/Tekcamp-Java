@@ -1,7 +1,13 @@
 package MySimpleBank;
 
+import java.io.*;
+
 public class AccountTest {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
+		
+		
+		
+		
 		Account member1 = new Account();
 		Account member2 = new Account();
 		member1.accountDeposit("checking",600.00);
@@ -14,5 +20,7 @@ public class AccountTest {
 		member2.saldo();
 		
 	}
+	
+	
 
 }

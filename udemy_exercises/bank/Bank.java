@@ -3,14 +3,16 @@ package bank;
 import java.util.ArrayList;
 
 public class Bank {
+	//Attributes
     private String name;
     private ArrayList<Branch> branches;
-
+//constructor
     public Bank(String name) {
         this.name = name;
         this.branches = new ArrayList<Branch>();
     }
-
+//Methods
+    //Autoboxing
     public boolean addBranch(String branchName) {
         if(findBranch(branchName) == null) {
             this.branches.add(new Branch(branchName));
@@ -37,7 +39,7 @@ public class Bank {
 
         return false;
     }
-
+    //Unboxing
     private Branch findBranch(String branchName) {
         for(int i=0; i<this.branches.size(); i++) {
             Branch checkedBranch = this.branches.get(i);
@@ -48,7 +50,7 @@ public class Bank {
 
         return null;
     }
-
+    //Unboxing
    public boolean listCustomers(String branchName, boolean showTransactions) {
        Branch branch = findBranch(branchName);
        if(branch != null) {
