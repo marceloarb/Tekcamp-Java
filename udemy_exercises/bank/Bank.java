@@ -32,7 +32,7 @@ public class Bank {
     }
 
     public boolean addCustomerTransaction(String branchName, String customerName, double amount) {
-        Branch branch = findBranch(branchName);
+		Branch branch = findBranch(branchName);
         if(branch != null) {
             return branch.addCustomerTransaction(customerName, amount);
         }
@@ -50,6 +50,7 @@ public class Bank {
 
         return null;
     }
+    
     //Unboxing
    public boolean listCustomers(String branchName, boolean showTransactions) {
        Branch branch = findBranch(branchName);
